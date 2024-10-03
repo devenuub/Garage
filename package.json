@@ -4,13 +4,13 @@
   "description": "A web app to find and list garage sales",
   "main": "app.js",
   "scripts": {
-    "start": "live-server" // if using live-server or similar for development
+    "start": "live-server" 
   },
   "dependencies": {
-    "leaflet": "^1.9.4" // You can specify version if you want
+    "leaflet": "^1.9.4" 
   },
   "devDependencies": {
-    "live-server": "^1.2.1" // Optional for local development
+    "live-server": "^1.2.1"
   },
   "keywords": ["garage sale", "finder", "map"],
   "author": "Your Name",
