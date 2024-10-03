@@ -1,0 +1,113 @@
+body {
+    background-color: black; /* Dark background for Matrix theme */
+    color: #00ff00; /* Green text color */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for a digital feel */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 100vh; /* Full viewport height */
+    flex-direction: column; /* Stack items vertically */
+}
+
+h1, h2 {
+    text-align: center; /* Center align headings */
+    font-weight: normal; /* Normal weight for headings */
+}
+
+#app {
+    margin: 20px; /* Space around the garage sale listings */
+    display: flex; /* Use flexbox for centering children */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    width: 100%; /* Full width for responsiveness */
+    max-width: 600px; /* Limit the maximum width of the app */
+}
+
+.sale-block {
+    border: 1px solid #00ff00; /* Green border for sale blocks */
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    border-radius: 5px; /* Rounded corners */
+    transition: transform 0.3s; /* Smooth transition effect */
+    width: 100%; /* Full width of parent container */
+    max-width: 400px; /* Limit width for modern compact look */
+}
+
+.sale-block:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+input, textarea {
+    background-color: #1a1a1a; /* Dark input fields */
+    color: #00ff00; /* Green text color */
+    border: 1px solid #00ff00; /* Green border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 8px; /* Padding for inputs */
+    width: 100%; /* Full width of parent container */
+    max-width: 400px; /* Limit the width for modern compact look */
+}
+
+input:focus, textarea:focus {
+    outline: none; /* Remove outline on focus */
+    box-shadow: 0 0 5px #00ff00; /* Green glow effect on focus */
+}
+
+button {
+    background-color: #00ff00; /* Green button */
+    color: black; /* Black text for buttons */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for buttons */
+    cursor: pointer; /* Change cursor to pointer */
+    font-weight: bold; /* Bold text for buttons */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+    width: 100%; /* Full width of parent container */
+    max-width: 400px; /* Limit the width for buttons */
+}
+
+button:hover {
+    background-color: #009900; /* Darker green on hover */
+}
+
+#map {
+    height: 400px; /* Adjusted height for a more compact map */
+    width: 100%; /* Full width of parent container */
+    max-width: 600px; /* Limit the width for modern compact look */
+    margin: 20px auto; /* Center map horizontally with margin */
+}
+
+.suggestions-dropdown {
+    position: absolute; /* Position suggestions dropdown */
+    background-color: #1a1a1a; /* Dark background for dropdown */
+    border: 1px solid #00ff00; /* Green border for dropdown */
+    z-index: 1000; /* Ensure it appears above other elements */
+    max-height: 200px; /* Max height for dropdown */
+    overflow-y: auto; /* Scroll if content exceeds max height */
+}
+
+.suggestion-item {
+    padding: 10px; /* Padding for each suggestion item */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.suggestion-item:hover {
+    background-color: rgba(0, 255, 0, 0.3); /* Highlight on hover */
+}
+
+/* Custom file upload button styles */
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer; /* Change cursor to pointer */
+    border: 1px solid #00ff00; /* Green border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #1a1a1a; /* Dark background */
+    color: #00ff00; /* Green text color */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.custom-file-upload.selected {
+    background-color: #00ff00; /* Full green background when a file is selected */
+    color: black; /* Black text for selected state */
+}

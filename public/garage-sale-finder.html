@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garage Sale Finder</title>
+    <link rel="stylesheet" href="../src/styles.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <h1>Find Garage Sales Near You</h1>
+    <div id="app"></div>
+    
+
+    <!-- Map container -->
+    <h2>Map of Garage Sales</h2>
+    <div id="map" style="height: 500px; width: 100%;"></div>
+
+    <!-- Garage Sale Listing Form -->
+    <h2>List Your Garage Sale</h2>
+    <form id="garage-sale-form">
+        <label for="title">Sale Title:</label>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br><br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" required></textarea><br><br>
+
+        <div id="file-upload-container">
+            <label id="file-upload-label" class="custom-file-upload">Choose File</label>
+            <input type="file" id="photo" name="photo" accept="image/*" style="display:none;">
+        </div><br>
+
+        <button type="submit">Submit Garage Sale</button>
+    </form>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- Your app.js -->
+    <script type="module" src="../src/app.js"></script>
+</body>
+</html>
